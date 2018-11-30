@@ -1,37 +1,22 @@
-# Polymer App Toolbox - Starter Kit
+# Polymer3 - Workshop Tesla Range calculator  
 
 [![Build Status](https://travis-ci.org/Polymer/polymer-starter-kit.svg?branch=master)](https://travis-ci.org/Polymer/polymer-starter-kit)
 
-This template is a starting point for building apps using a drawer-based
-layout. The layout is provided by `app-layout` elements.
-
-This template, along with the `polymer-cli` toolchain, also demonstrates use
-of the "PRPL pattern" This pattern allows fast first delivery and interaction with
-the content at the initial route requested by the user, along with fast subsequent
-navigation by pre-caching the remaining components required by the app and
-progressively loading them on-demand as the user navigates through the app.
-
-The PRPL pattern, in a nutshell:
-
-* **Push** components required for the initial route
-* **Render** initial route ASAP
-* **Pre-cache** components for remaining routes
-* **Lazy-load** and progressively upgrade next routes on-demand
+![](polymer-tesla.png)
 
 ### Setup
 
 ##### Prerequisites
 
 Install [Polymer CLI](https://github.com/Polymer/polymer-cli) using
-[npm](https://www.npmjs.com) (we assume you have pre-installed [node.js](https://nodejs.org)).
+[npm](https://www.npmjs.com) (we assume you have pre-installed [node.js](https://nodejs.org) >= version 8.x).
 
     npm install -g polymer-cli@next
 
-##### Initialize project from template
+##### Clone repository
 
-    mkdir my-app
-    cd my-app
-    polymer init polymer-3-starter-kit
+    git clone <repository>
+    cd workshop-polymer-tesla-range-calculator
 
 ### Start the development server
 
@@ -39,6 +24,8 @@ This command serves the app at `http://127.0.0.1:8081` and provides basic URL
 routing for the app:
 
     npm start
+    or
+    polymer serve
 
 ### Build
 
@@ -82,5 +69,3 @@ If running Windows you will need to set the following environment variables:
 Read More here [daffl/launchpad](https://github.com/daffl/launchpad#environment-variables-impacting-local-browsers-detection)
 
 ---
-
-Looking for our older PSK2 Polycast or migration blog post? See [the previous README](https://github.com/Polymer/polymer-starter-kit/blob/v3.2.1/README.md).
